@@ -1,0 +1,12 @@
+---
+layout: page
+title: Birds
+permalink: /birds/
+---
+
+{% assign products = "Kiwi,Tui,Kea,Karariki,Weka" | split: "," %}
+<ul>
+ {% for item in products %}
+   <li>{{ item }}</li>
+ {% endfor %}
+</ul>
